@@ -5,10 +5,11 @@ import Items from "./components/Items.vue";
 import Features from "./components/Features.vue";
 import Blogs from "./components/Blogs.vue";
 import BottomCard from "./components/BottomCard.vue";
+import Footer from "./components/Footer.vue";
 </script>
 
 <template>
-<div class="container flex flex-col gap-10">
+<div class="container flex flex-col gap-20">
   <div>
     <Nav />
     <Hero />
@@ -17,6 +18,7 @@ import BottomCard from "./components/BottomCard.vue";
   <Features />
   <Blogs />
   <BottomCard />
+  <Footer />
 </div>
 </template>
 
