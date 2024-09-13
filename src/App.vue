@@ -4,15 +4,19 @@ import Hero from "./components/Hero.vue";
 import Items from "./components/Items.vue";
 import Features from "./components/Features.vue";
 import Blogs from "./components/Blogs.vue";
+import BottomCard from "./components/BottomCard.vue";
 </script>
 
 <template>
-<div class="container flex flex-col gap-3">
-  <Nav />
-  <Hero />
+<div class="container flex flex-col gap-10">
+  <div>
+    <Nav />
+    <Hero />
+  </div>
   <Items />
   <Features />
   <Blogs />
+  <BottomCard />
 </div>
 </template>
 
