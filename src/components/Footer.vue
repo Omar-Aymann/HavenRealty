@@ -47,15 +47,21 @@
                     </p>
     
                 </div>
-                <div>
-                    <input type="email" name="email" id="email" placeholder="Enter Your Email" class="border-b border-b-white bg-transparent w-3/4 px-3 py-2">
+                <div class=" w-full">
+                    <div class="w-3/4 relative">
+                        <input type="email" name="email" id="email" placeholder="Enter Your Email" class="border-b border-b-white bg-transparent w-full px-3 py-2">
+                        <img src="/arrow-left.svg" class="w-4 absolute right-0 top-2/4 -translate-y-2/4" alt="">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="flex justify-between pt-5 pb-16">
-        <div class="">designed by <a href="https://www.behance.net/graphiworld73" class="text-mainGreen">Shariful Islam</a></div>
-
+    <div class="flex justify-center align-center pt-5 pb-16">
+    <div class="flex flex-col gap-3">
+        <div class="">designed by <a href="https://www.behance.net/graphiworld73" class="text-mainGreen">Shariful Islam</a>
+        </div>
+        <div>developed by <a href="https://www.linkedin.com/in/omar-negm-002365260/" class="text-mainGreen">Omar Negm</a></div>
+    </div>
     </div>
 
     </div>
