@@ -1,7 +1,6 @@
 <script lang="ts" setup>
 import Btn from "./micro-components/Btn.vue";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import {onMounted} from "vue";
 // Register ScrollTrigger plugin
 // gsap.registerPlugin(ScrollTrigger);

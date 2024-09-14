@@ -1,6 +1,78 @@
 <script lang="ts" setup>
 import Btn from "./micro-components/Btn.vue";
+import { onMounted } from "vue";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+// Register ScrollTrigger plugin
+gsap.registerPlugin(ScrollTrigger);
+
+onMounted(() => {
+    // Create a GSAP timeline for the first feature section
+    const tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".first-feature",
+            start: "top 80%",    // Start when the top of the product is 80% from the viewport top
+      end: "bottom top",   // End when the bottom of the product reaches the top of the viewport
+      once: true,    
+            // markers: true    // Optional: Uncomment to see markers for debugging
+        }
+    });
+
+    // Add animations to the timeline for the first feature
+    tl.from(".imgCon img", {
+        opacity: 0,
+        x: -100,  // Move the image from the left
+        duration: 1,
+        ease: "power2.out" // Smooth easing effect
+    })
+    .from(".text h1", {
+        opacity: 0,
+        y: 50,   // Move the heading from the bottom
+        duration: 1,
+        ease: "power2.out"
+    }, "-=0.5") // Overlap the image and heading animations
+    .from(".text p", {
+        opacity: 0,
+        y: 30,   // Move paragraphs from the bottom
+        duration: 0.8,
+        stagger: 0.3, // Animate paragraphs one after another with a small delay
+        ease: "power2.out"
+    }, "-=0.3") // Start while the heading is still animating
+  
+
+    // Second feature section animation with ScrollTrigger
+    gsap.from(".second-feature .text h1", {
+        scrollTrigger: {
+            trigger: ".second-feature",
+            // markers: true  // Uncomment for debugging
+            start: "top 80%",    // Start when the top of the product is 80% from the viewport top
+      end: "bottom top",   // End when the bottom of the product reaches the top of the viewport
+      once: true,    
+        },
+        opacity: 0,
+        y: 50,  // Move heading from bottom
+        duration: 1,
+        ease: "power2.out",
+    });
+
+    gsap.from(".second-feature .feature", {
+        scrollTrigger: {
+            trigger: ".second-feature",
+            // markers: true  // Uncomment for debugging
+            start: "top 80%",    // Start when the top of the product is 80% from the viewport top
+      end: "bottom top",   // End when the bottom of the product reaches the top of the viewport
+      once: true,    
+        },
+        opacity: 0,
+        y: 30,  // Move features from bottom
+        duration: 1,
+        stagger: 0.3,  // Delay between feature cards
+        ease: "power2.out"
+    });
+});
 </script>
+
 <template>
     <div class="features flex flex-col">
       <div class="first-feature flex flex-col lg:flex-row gap-8 pt-20 lg:px-64 px-8 justify-center items-center ">
@@ -26,7 +98,7 @@ import Btn from "./micro-components/Btn.vue";
   
       <!-- Second Feature Section -->
       <div class="second-feature flex flex-col lg:flex-row gap-8 pt-20 lg:px-64 px-8 justify-center items-start">
-        <div class="text flex flex-col lg:w-1/2 gap-7 font-medium pr-20">
+        <div class=" flex flex-col lg:w-1/2 gap-7 font-medium pr-20">
           <h1 class="text-5xl text-dark font-bold leading-[1.4]">Securing Your <br>Property, Our, <br> Priority</h1>
         <img src="/arrow.svg" class=" fill-mainGreen text-mainGreen w-8" alt="">
         </div>
