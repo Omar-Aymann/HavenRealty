@@ -3,7 +3,7 @@ import Btn from "./micro-components/Btn.vue";
 </script>
 
 <template>
-    <nav class="flex flex-row items-center justify-between px-20 py-5 w-full  text-dark">
+    <nav class="flex flex-row items-center justify-between lg:px-20 py-5 w-full  text-dark">
         <div class="logo">
             <h3 class="text-2xl font-bold">HavenRealty</h3>
         </div>
@@ -13,6 +13,6 @@ import Btn from "./micro-components/Btn.vue";
             <li>Pricing</li>
             <li>About Us</li>
         </ul>
-        <Btn class=" bg-dark text-sm  font-bold">Get Started</Btn>
+        <Btn class=" bg-dark text-sm  font-bold hover:bg-transparent hover:text-dark border border-dark transition-colors">Get Started</Btn>
     </nav>
 </template>

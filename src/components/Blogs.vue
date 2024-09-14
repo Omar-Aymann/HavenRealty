@@ -3,7 +3,7 @@ import Blog from "./micro-components/Blog.vue";
 </script>
 
 <template>
-    <div class="features flex flex-col gap-8 pt-20 px-64">
+    <div class="features flex flex-col gap-8 pt-20 lg:px-64">
         <div class="features-upper flex justify-between items-end">
             <h3 class="text-4xl text-dark font-bold">All Blogs</h3>
             <p class="text-mainGreen font-bold">View All</p>

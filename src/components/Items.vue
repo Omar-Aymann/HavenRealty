@@ -2,7 +2,7 @@
 import Product from "./micro-components/Product.vue";
 </script>
 <template>
-    <div class="item flex flex-col gap-8 pt-20 px-64">
+    <div class="item flex flex-col gap-8 pt-20 lg:lg:px-64">
         <div class="items-upper flex justify-between items-end">
             <h3 class="text-4xl text-dark font-bold">Top-Notch <br> properties no sale</h3>
             <p class="text-mainGreen font-bold">View All</p>

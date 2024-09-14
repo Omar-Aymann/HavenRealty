@@ -3,7 +3,7 @@ import Btn from "./micro-components/Btn.vue";
 </script>
 <template>
     <div class="features flex flex-col">
-      <div class="first-feature flex gap-8 pt-20 px-64 justify-center items-center ">
+      <div class="first-feature flex gap-8 pt-20 lg:px-64 justify-center items-center ">
         <div class="imgCon w-1/2">
           <img src="/screen.png" class="w-full h-full object-cover" alt="">
         </div>
@@ -22,7 +22,7 @@ import Btn from "./micro-components/Btn.vue";
       </div>
   
       <!-- Second Feature Section -->
-      <div class="second-feature flex gap-8 pt-20 px-64 justify-center items-start">
+      <div class="second-feature flex gap-8 pt-20 lg:px-64 justify-center items-start">
         <div class="text flex flex-col w-1/2 gap-7 font-medium pr-20">
           <h1 class="text-5xl text-dark font-bold leading-[1.4]">Securing Your <br>Property, Our, <br> Priority</h1>
         <img src="/arrow.svg" class=" fill-mainGreen text-mainGreen w-8" alt="">

@@ -3,8 +3,8 @@ import Btn from "./micro-components/Btn.vue";
 </script>
 
 <template>
-    <div class=" p-4 px-5 h-[120vh] w-full relative">
-        <div class="rounded-3xl hero h-full flex gap-3 items-center p-16 relative overflow-hidden">
+    <div class=" lg:p-4 lg:px-5 h-[120vh] w-full relative">
+        <div class="rounded-3xl hero h-full flex gap-3 items-center lg:p-16 relative overflow-hidden">
             <div class="content flex flex-col gap-10 z-10">
                 <div class="text flex flex-col gap-4">
                     <h1 class="text-white font-semibold text-[5.5rem] leading-[0.9]">Find Your <br> Dream Home</h1>
@@ -13,7 +13,7 @@ import Btn from "./micro-components/Btn.vue";
                     </p>
                 </div>
                 <div class="lowerpart">
-                    <Btn class=" bg-dark text-sm  font-bold">Discover Now</Btn>
+                    <Btn class=" bg-dark text-sm  font-bold hover:bg-transparent hover:text-white border border-dark transition-colors">Discover Now</Btn>
                     <Btn>Learn More</Btn>
                 </div>
             </div>
