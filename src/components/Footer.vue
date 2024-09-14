@@ -2,9 +2,9 @@
 
 </script>
 <template>
-    <div class="bg-dark text-white px-24 " >
+    <div class="bg-dark text-white lg:px-24 px-16 " >
         <div class="flex flex-col pt-20 gap-16">
-            <div class="upper flex justify-between border-b py-5 border-b-white">
+            <div class="upper flex flex-col lg:flex-row justify-between border-b py-5 border-b-white">
                 <div class=" text-3xl font-bold">
                     HavenRealty
                 </div>
@@ -14,8 +14,8 @@
                     <div><b>Location:</b> San Diego, CA</div>
                 </div>
         </div>
-        <div class="middle flex justify-between py-5 border-b border-b-white">
-            <div class="links grid grid-cols-3 gap-28">
+        <div class="middle flex flex-col lg:flex-row gap-4 justify-between py-5 border-b border-b-white">
+            <div class="links grid grid-cols-2 lg:grid-cols-3 gap-28">
                 <div class="flex flex-col gap-5">
                     <div class="text-lg text-mainGreen font-semibold">Features</div>
                     <div>Home</div>

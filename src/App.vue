@@ -6,10 +6,12 @@ import Features from "./components/Features.vue";
 import Blogs from "./components/Blogs.vue";
 import BottomCard from "./components/BottomCard.vue";
 import Footer from "./components/Footer.vue";
+import { gsap } from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 </script>
 
 <template>
-<div class="container flex flex-col gap-20">
   <div>
     <Nav />
     <Hero />
@@ -19,7 +21,6 @@ import Footer from "./components/Footer.vue";
   <Blogs />
   <BottomCard />
   <Footer />
-</div>
 </template>
 
 <style scoped>

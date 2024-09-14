@@ -1,5 +1,7 @@
 <script lang="ts" setup>
 import Btn from "./Btn.vue";
+import {onMounted} from "vue";
+import gsap from "gsap";
 const props = defineProps({
     img: {
         type: String,
@@ -18,9 +20,26 @@ const props = defineProps({
         required: true
     }
 })
+onMounted(() => {
+    gsap.from('.product', {
+        opacity: 0,
+        scale: 1.3,
+        duration: 1,
+        padding: 0,
+        ease: "power1.out",// Optional, for easing
+        scrollTrigger: {
+            trigger: ".product"
+        }
+    })
+    .to('.product', {
+        scale: 1,
+        duration: 1,
+        ease: "power1.out" // Optional, for easing
+    }, "-=0.5")
+})
 </script>
 <template> 
-                <div class="product w-1/3 overflow-hidden flex items-center justify-center border-2 border-slate-200 rounded-2xl p-3 flex-col gap-3">
+                <div class="product lg:w-1/3 w-full overflow-hidden flex items-center justify-center border-2 border-slate-200 rounded-2xl p-3 flex-col gap-3">
                 <div class="aspect-square w-full overflow-hidden rounded-xl">
                     <img :src="props.img" class="w-full h-full object-top object-cover  scale-150" alt="">
                 </div>
