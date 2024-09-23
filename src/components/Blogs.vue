@@ -9,9 +9,9 @@ import Blog from "./micro-components/Blog.vue";
             <p class="text-mainGreen font-bold">View All</p>
         </div>
         <div class="blogs flex lg:flex-row flex-col gap-5">
-        <Blog img="/blog1.jpg" title="The Benefits of Working" desc="A Real Estate Team Provides Expert Support Guidance, Saving You Time And Money In The Buying Process."  />
-        <Blog img="/blog2.jpg" title="How a Real Estate Team" desc="With Their Market Knowledge Skills, A Real Estate Team Can Secure The Best Deal Possible." />
-        <Blog img="/blog3.jpg" title="The Advantages of Having" desc="A Dedicated Real Estate Team Can Offer And Personalized Attention, Provide Valuable Insights." price="$ 1,000,000" />
+        <Blog img="/blog1.webp" title="The Benefits of Working" desc="A Real Estate Team Provides Expert Support Guidance, Saving You Time And Money In The Buying Process."  />
+        <Blog img="/blog2.webp" title="How a Real Estate Team" desc="With Their Market Knowledge Skills, A Real Estate Team Can Secure The Best Deal Possible." />
+        <Blog img="/blog3.webp" title="The Advantages of Having" desc="A Dedicated Real Estate Team Can Offer And Personalized Attention, Provide Valuable Insights." price="$ 1,000,000" />
 </div>
 </div>
 

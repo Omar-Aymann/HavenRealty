@@ -8,9 +8,9 @@ import Product from "./micro-components/Product.vue";
             <p class="text-mainGreen font-bold">View All</p>
         </div>
         <div class="products flex flex-col lg:flex-row gap-5">
-            <Product img="/tower1.jpg" title="Vista Verde Estates" desc="Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet" price="$ 1,000,000" />
-            <Product img="/tower2.jpg" title="Haven Heights" desc="Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet" price="$ 900,000" />
-            <Product img="/tower3.jpg" title="La Jolla Pointe" desc="Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet" price="$ 5,500,000" />
+            <Product img="/tower1.webp" title="Vista Verde Estates" desc="Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet" price="$ 1,000,000" />
+            <Product img="/tower2.webp" title="Haven Heights" desc="Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet" price="$ 900,000" />
+            <Product img="/tower3.webp" title="La Jolla Pointe" desc="Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet" price="$ 5,500,000" />
         </div>
         </div>
 </template>
